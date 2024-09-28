@@ -54,3 +54,4 @@ ALTER TABLE （資料表）
 ADD CONSTRAINT （FK 名稱） FOREIGN KEY (（此資料表的對應欄位名稱）)
 REFERENCES （對方資料表） (（對方資料表的對應欄位名稱）);
 ```
+<br>
