@@ -16,7 +16,7 @@ FROM
     INNER JOIN sys.columns AS cp ON fkc.parent_object_id = cp.object_id AND fkc.parent_column_id = cp.column_id
     INNER JOIN sys.tables AS tr ON fkc.referenced_object_id = tr.object_id
     INNER JOIN sys.columns AS cr ON fkc.referenced_object_id = cr.object_id AND fkc.referenced_column_id = cr.column_id
-WHERE tp.name = '（資料表名稱）';
+WHERE tr.name = '（資料表名稱）';
 ```
 填入「（資料表名稱）」，可以找出所有參考此資料表的 Foreign Key 名稱、與每個 Foreign Key 的參考與被參考資訊。  
 <br>
@@ -36,8 +36,7 @@ FROM
     INNER JOIN sys.columns AS cp ON fkc.parent_object_id = cp.object_id AND fkc.parent_column_id = cp.column_id
     INNER JOIN sys.tables AS tr ON fkc.referenced_object_id = tr.object_id
     INNER JOIN sys.columns AS cr ON fkc.referenced_object_id = cr.object_id AND fkc.referenced_column_id = cr.column_id
-WHERE 
-    tp.name = '（資料表名稱）';
+WHERE tp.name = '（資料表名稱）';
 ```
 填入「（資料表名稱）」，可以找出所有此資料表的 Foreign Key 名稱、與每個 Foreign Key 的參考與被參考資訊。  
 <br>
