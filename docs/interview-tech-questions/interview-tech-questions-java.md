@@ -2,7 +2,7 @@
 <br>
 
 ### 1. Java 的特色是？
-觀念：Java 執行環境
+概念：Java 執行環境
 - 物件導向
 - 跨平台
     - 由 compiler 編譯為二進制檔（class 檔）
@@ -11,14 +11,14 @@
 <br>
 
 ### 2. 什麼時候會進行 Garbage Collection？
-觀念：Garbage Collection
+概念：Garbage Collection
 - 自動執行，通常於記憶體不足時
 - 掃描 heap，清除沒有被 reference 的物件資料
 
 <br>
 
 ### 3. `System.out.print`、`System.out.println`、`System.out.printf` 的差別？
-觀念：System.out
+概念：System.out
 - 若為變數，自動呼叫 `toString()`
 - System.out.print
     - 於 console 輸出，不換行
@@ -30,19 +30,19 @@
 <br>
 
 ### 4. 有哪些基本資料型態？
-觀念：基本資料型態
+概念：基本資料型態
 - （待補）
 
 <br>
 
 ### 5. i++ 與 ++i 的比較？
-觀念：運算子
+概念：運算子
 - （待補）
 
 <br>
 
 ### 6. String 的特性
-觀念：String
+概念：String
 - String pool
     - 如果使用 `String variable = "string";`，會先進 String pool 判斷是否有內容相同的字串——如果有、就使用同一份；如果沒有，再在 String pool 創建新的。
 - immutable
@@ -51,7 +51,7 @@
 <br>
 
 ### 7. String 的 `==` 和 `equals()`？
-觀念：String  
+概念：String  
 <b style="color: red;">常考</b>
 - `==`：判斷記憶體位址是否相同
     - 若是以 `String variable = "string";` 這種方式宣告的，由於 String pool 特性、相同內容的字串記憶體位址也會相同。
@@ -60,14 +60,14 @@
 <br>
 
 ### 8. 什麼是物件？
-觀念：物件
+概念：物件
 - 可以有屬性與方法，並有 constructor 以建立物件
 - 在 Java，除了基本資料型態、其餘都是物件
 
 <br>
 
 ### 9. Stack 與 Heap
-觀念：Stack 與 Heap
+概念：Stack 與 Heap
 - Stack
     - 儲存變數名稱對應的東西
         - 基本資料型態：儲存內容
@@ -80,7 +80,7 @@
 <br>
 
 ### 10. Java 是 Pass by Value（傳值）還是 Pass by Reference（傳址）？
-觀念：賦值
+概念：賦值
 - Java 是 Pass by Value（Copy by Value），複製一份 stack 內的資料去賦值。
     - 如果該變數是基本資料型態，會複製一份資料內容過去，兩個變數的操作互不干涉。
     - 如果該變數是物件，就會複製記憶體位址過去，導致兩個變數實際操作的內容是同一個物件。
@@ -111,10 +111,10 @@
 ### 14. 什麼是繼承？
 概念：繼承  
 <b style="color: red;">常考</b>
-- `extend` 繼承 parent class
-- 會繼承 parent class 已經定義好的屬性與方法
+- `extend` 繼承 superclass
+- 會繼承 superclass 已經定義好的屬性與方法
 - 只能繼承一個 class
-- 舉例：Animal 是 parent class、已經定義了 age 屬性和 walk() 方法；Cat 繼承了 Animal、是 child class，不需額外定義就擁有 age 屬性、可以使用 walk() 方法。
+- 舉例：Animal 是 superclass、已經定義了 age 屬性和 walk() 方法；Cat 繼承了 Animal、是 subclass，不需額外定義就擁有 age 屬性、可以使用 walk() 方法。
 
 <br>
 
@@ -161,13 +161,13 @@
 ### 19. 什麼是多型（Polymorphism）？
 概念：多型  
 <b style="color: red;">常考</b>
-- 用 parent class／interface 操作物件，實際上的內容被定義在繼承／實作的 class 裡
+- 用 superclass／interface 操作物件，實際上的內容被定義在繼承／實作的 class 裡
     - 舉例：
-    ```Java
-    List<String> strings = new ArrayList<String>();
-    strings.add("New Element");
-    ```
-    其中 `add()` 的實際內容是定義在 ArrayList 裡、但這裡 strings 的型態是 List、用 interface 型態操作。
+        ```Java
+        List<String> strings = new ArrayList<String>();
+        strings.add("New Element");
+        ```
+        其中 `add()` 的實際內容是定義在 ArrayList 裡、但這裡 strings 的型態是 List、用 interface 型態操作。
 
 <br>
 
@@ -187,13 +187,27 @@
     - 無序（HashMap）／有序（TreeMap、LinkedHashMap）
     - key 不可重複、value 可重複
     - 常用實作：HashMap、TreeMap、LinkedHashMap
-- 所有的集合，元素都是物件、不能是基本資料型態。
+- 所有的集合，元素都是物件、不能放基本資料型態。
 
 <br>
 
-### 21. 什麼是泛型？
+### 21. ArrayList 與 LinkedList 的比較？
+概念：資料結構
+- ArrayList
+    - 底層是陣列
+    - 查詢：快
+    - 增刪：慢
+- LinkedList
+    - 底層是鏈表
+    - 查詢：慢
+    - 增刪：快
+
+<br>
+
+### 22. 什麼是泛型？
 概念：泛型
 - 限制此物件內裝著的物件是什麼型態
+- 只能放物件、不能放基本資料型態
 - 舉例：
     ```Java
     List<String> strings = new ArrayList<String>();
@@ -202,31 +216,36 @@
 
 <br>
 
-### 22. Exception 分為哪幾種？
+### 23. Exception 分為哪幾種？
 概念：Exception
 - （待補）
 
 <br>
 
-### 23. throw 與 throws？
+### 24. throw 與 throws？
+概念：Exception
+- throw
+    - 在方法裡
+    - 主動 throw 一個自己創建的 Exception 物件。
+- throws
+    - 在方法宣告上
+    - 表示此方法可能會 throws 哪些 class 的 Exception，呼叫此方法的地方要處理。
+
+<br>
+
+### 25. try-catch-finally 的執行順序？
 概念：Exception
 - （待補）
 
 <br>
 
-### 24. try-catch-finally 的執行順序？
-概念：Exception
-- （待補）
-
-<br>
-
-### 25. Java 如何跟資料庫連線？
+### 26. Java 如何跟資料庫連線？
 概念：JDBC
 - （待補）
 
 <br>
 
-### 26. 什麼是 SQL Injection？要如何預防？
+### 27. 什麼是 SQL Injection？要如何預防？
 概念：JDBC
 - （待補）
 

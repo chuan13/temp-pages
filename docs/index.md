@@ -10,5 +10,5 @@
     - [Java 基礎](./interview-tech-questions/interview-tech-questions-java)
     - SQL 基礎
     - 網路基礎
-    - ORM 與 Spring 系列框架
+    - [Java 框架](./interview-tech-questions/interview-tech-questions-framework.md)
 
