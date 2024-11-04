@@ -90,4 +90,18 @@
 - Spring 會生成一個 class 實作自己寫的介面
 - 已經有 findAll()、findById()、save() 等等方法，且 findAll() 可以用 Pageable（分頁）、Specification（篩選條件）
 
-### 10.
+### 10. 什麼是 Java Bean？
+### 1. 什麼是 DAO 與 Service？
+### 1. 什麼是 Persistent Class？
+### 1. 哪些annotation可以取代Bean
+`@Controller`、`@Service`、`@Repository`、`@Component`
+### 1. ApplicationContext哪三個層別實現
+???
+### 1. 如何利用JPA達成複合式查詢？
+### 1. JPA是什麼?
+### 1. 單元測試是什麼?
+### 1. Transaction標籤下哪?怎麼下?在幹嘛?
+### 1. 多對多要怎麼處理，為什麼需要中介表
+### 1. @ResponseBody 跟 @ResponseEntity
+### 1. @RequestMapping 跟 @GetMapping
+### 1. logger.info logger.error logger.debug的應用場景

@@ -250,3 +250,6 @@
 - （待補）
 
 <br>
+
+### 28. 執行緒 synchronized
+### 28. Lambda 和 stream API

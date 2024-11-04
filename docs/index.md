@@ -7,8 +7,10 @@
 ### 目錄
 - [[MS SQL Server] Foreign Key 的資訊與修改](./AboutForeignKey)
 - 面試準備：技術問答
-    - [Java 基礎](./interview-tech-questions/interview-tech-questions-java)
-    - SQL 基礎
-    - 網路基礎
-    - [Java 框架](./interview-tech-questions/interview-tech-questions-framework.md)
+    - [Java](./interview-tech-questions/interview-tech-questions-java)
+    - [SQL](./interview-tech-questions/interview-tech-questions-sql)
+    - [網路](./interview-tech-questions/interview-tech-questions-web)
+    - [Java 框架](./interview-tech-questions/interview-tech-questions-framework)
+    - [Git](./interview-tech-questions/interview-tech-questions-git)
+    - [其他：團隊、經歷、職涯……](./interview-tech-questions/interview-tech-questions-experienceandcareer)
 
