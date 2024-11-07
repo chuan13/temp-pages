@@ -31,6 +31,7 @@
     - ```bash
         git stash pop
         ```
+
 ## 注意事項與小知識
 - 保存 stash 前，要確認編輯的檔案已在 Staging area。
 - stash 無法 push 到 remote repo。
