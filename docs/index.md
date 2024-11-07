@@ -6,11 +6,14 @@
 
 ### 目錄
 - [[MS SQL Server] Foreign Key 的資訊與修改](./AboutForeignKey)
-- 面試準備：技術問答
-    - [Java 基礎](./interview-tech-questions/interview-tech-questions-java)
-    - SQL 基礎
-    - 網路基礎
-    - [Java 框架](./interview-tech-questions/interview-tech-questions-framework.md)
+- 面試準備：問答
+    - [Java SE](./interview-questions/tech-javase.md)
+    - [SQL](./interview-questions/tech-sql.md)
+    - [網站與專案架構](./interview-questions/tech-web.md)
+    - [Java EE](./interview-questions/tech-javaee.md)
+    - [Java 框架](./interview-questions/tech-javaframework.md)
+    - [Git](./interview-questions/tech-git.md)
+    - [其他：經歷、動機、職涯……](./interview-questions/other.md)
 - Git
     - [Git Tag 與 GitHub Release](./git_tag.md)
     - [Git Stash](./git_stash.md)
